@@ -1,8 +1,8 @@
 <?php
     include 'DAL\conexao.php';
-    $sql = "select * from produto;";
+    $sql = "select * from pedidos;";
     $con = Conexao::conectar(); 
-    $lstProduto = $con->query($sql); 
+    $lstPedido = $con->query($sql); 
 ?>
 
 
@@ -13,25 +13,23 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="CSS/tabelas.css">
-    <title>Listar Produtos</title>
+    <title>Listar Pedidos</title>
 </head>
 <body>
-    <h1>Listar Produtos</h1>
+    <h1>Listar Pedidos</h1>
     <table>
         <tr>
             <th>ID</th>
-            <th>NOME</th>
-            <th>PRECO</th>
-            <th>QUANTIDADE</th>
+            <th>ID DO CLIENTE</th>
+            <th>DATA DO PEDIDO</th>
         </tr>
         <?php 
-            foreach ($lstProduto as $produto){
+            foreach ($lstPedido as $pedido){
         ?>
             <tr>
-                <td><?php echo $produto['ID']; ?></td>
-                <td><?php echo $produto['NOME']; ?></td>
-                <td><?php echo $produto['PRECO']; ?></td>
-                <td><?php echo $produto['QTDE']; ?></td>
+                <td><?php echo $pedido['ID']; ?></td>
+                <td><?php echo $pedido['ID_CLIENTE']; ?></td>
+                <td><?php echo $pedido['DATA_PEDIDO']; ?></td>
             </tr>
         <?php 
             }
