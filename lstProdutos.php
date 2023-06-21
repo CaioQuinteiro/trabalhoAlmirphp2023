@@ -1,8 +1,8 @@
 <?php
     include 'DAL\conexao.php';
-    $sql = "select * from cliente;";
+    $sql = "select * from produto;";
     $con = Conexao::conectar(); 
-    $lstCliente = $con->query($sql); 
+    $lstProduto = $con->query($sql); 
 ?>
 
 
@@ -21,17 +21,17 @@
         <tr>
             <th>ID</th>
             <th>NOME</th>
-            <th>ENDERECO</th>
-            <th>TELEFONE</th>
+            <th>PRECO</th>
+            <th>QUANTIDADE</th>
         </tr>
         <?php 
-            foreach ($lstCliente as $cliente){
+            foreach ($lstProduto as $produto){
         ?>
             <tr>
-                <td><?php echo $cliente['ID']; ?></td>
-                <td><?php echo $cliente['NOME']; ?></td>
-                <td><?php echo $cliente['ENDERECO']; ?></td>
-                <td><?php echo $cliente['TELEFONE']; ?></td>
+                <td><?php echo $produto['ID']; ?></td>
+                <td><?php echo $produto['NOME']; ?></td>
+                <td><?php echo $produto['PRECO']; ?></td>
+                <td><?php echo $produto['QTDE']; ?></td>
             </tr>
         <?php 
             }
