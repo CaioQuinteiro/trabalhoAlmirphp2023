@@ -1,5 +1,4 @@
 <?php
-     
     include 'DAL\conexao.php';
     $sql = "select * from cliente;";
     $con = Conexao::conectar(); 
