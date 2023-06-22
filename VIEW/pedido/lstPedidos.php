@@ -1,5 +1,8 @@
 <?php
-    include 'DAL\conexao.php';
+    echo __DIR__; 
+     
+    include 'C:\xampp\htdocs\trabalhoAlmirphp2023\DAL\conexao.php';
+    use DAL\Conexao;
     $sql = "select * from pedidos;";
     $con = Conexao::conectar(); 
     $lstPedido = $con->query($sql); 
@@ -12,7 +15,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="CSS/tabelas.css">
+    <link rel="stylesheet" href="1CSS/tabelas.css">
     <title>Listar Pedidos</title>
 </head>
 <body>

@@ -1,4 +1,7 @@
 <?php
+    namespace DAL;
+
+use PDO;
 
 class Conexao
 {
@@ -18,9 +21,9 @@ class Conexao
     {
         if (self::$cont == null) {
             try {
-                self::$cont = new PDO("mysql:host=" . self::$dbHost . ";dbname=" . self::$dbNome, self::$dbUsuario, self::$dbSenha);
+                self::$cont = new \PDO("mysql:host=" . self::$dbHost . ";dbname=" . self::$dbNome, self::$dbUsuario, self::$dbSenha);
                 self::$cont->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
-            } catch (PDOException $exception) {
+            } catch (\PDOException $exception) {
                 die($exception->getMessage());
             }
         }
