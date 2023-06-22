@@ -1,7 +1,7 @@
 <?php
     namespace DAL;
     include 'conexao.php';
-    include 'C:\xampp\htdocs\trabalhoAlmirphp2023\MODEL\Cliente.php';
+    include '..\..\MODEL\Cliente.php';
 
     class dalCliente{
 

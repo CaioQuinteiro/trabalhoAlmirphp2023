@@ -1,8 +1,7 @@
 <?php
-    echo __DIR__; 
 
 use DAL\dalCliente;     
-    include 'C:\xampp\htdocs\trabalhoAlmirphp2023\DAL\dalCliente.php';
+    include '..\..\DAL\dalCliente.php';
     $dal = new \dal\dalCliente();
     $lstCliente = $dal->Select(); 
 ?>

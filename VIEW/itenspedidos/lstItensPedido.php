@@ -1,7 +1,7 @@
 <?php
     echo __DIR__; 
      
-    include 'C:\xampp\htdocs\trabalhoAlmirphp2023\DAL\conexao.php';
+    include '..\..\DAL\conexao.php';
     use DAL\Conexao;
     $sql = "select * from itens_pedido;";
     $con = Conexao::conectar(); 
