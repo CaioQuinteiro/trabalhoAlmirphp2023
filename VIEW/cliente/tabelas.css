@@ -3,34 +3,47 @@ html {
 }
 
 * {
-    background-color: #cbcbcb;
+    background-color: #aeaeae;
 }
 
 h1 {
-    text-align: center;
-    color: black;
+  text-align: center;
+  color: black;
+  font-size: 40px;
+  margin: 20px auto; 
+  border-radius: 4px;
 }
 
 table {
-  
-    border-collapse: collapse;
-    width: 100%;
-  }
+  border-collapse: collapse;
+  width: 100%;
+}
   
 td, th {
-    padding: 8px;
-  }
+  padding: 10px;
+}
 
 th {
-    background-color: #22177dcf;
-    text-align: left;
-  }
+  background-color: #22177dcf;
+  text-align: left;
+}
 
 tr:nth-child(even) {
-    background-color: #f9f9f9;
-  }
+  background-color: #f9f9f9;
+}
 
-td:hover {
-    background-color: #4039817d;
-    cursor: pointer;
-  }
+tr:hover td  {
+  transition: 0.4s;
+  background-color: #4039817d;
+  cursor: pointer;
+}
+
+td::selection, h1::selection{
+  background-color: #4039817d;
+  color: black;
+}
+
+th::selection{
+  background-color: #b8b8b8;
+  color: black;
+}

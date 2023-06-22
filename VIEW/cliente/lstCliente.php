@@ -18,29 +18,34 @@
     <title>Listar Clientes</title>
 </head>
 <body>
-    <h1>Listar Clientes</h1>
-    <table>
-        <tr>
-            <th>ID</th>
-            <th>NOME</th>
-            <th>ENDERECO</th>
-            <th>TELEFONE</th>
-        </tr>
-        <?php 
-            foreach ($lstCliente as $cliente){
-        ?>
-            <tr>
-                <td><?php echo $cliente['ID']; ?></td>
-                <td><?php echo $cliente['NOME']; ?></td>
-                <td><?php echo $cliente['ENDERECO']; ?></td>
-                <td><?php echo $cliente['TELEFONE']; ?></td>
-            </tr>
-        <?php 
-            }
-        ?>
 
-
-    </table>
+    <div class="container">
+        <h1>Listar Clientes</h1>
+        <table>
+            <thead>
+                <tr>
+                    <th>ID</th>
+                    <th>NOME</th>
+                    <th>ENDERECO</th>
+                    <th>TELEFONE</th>
+                </tr>
+            </thead>
+            <?php 
+                foreach ($lstCliente as $cliente){
+            ?>
+            <tbody>
+                <tr>
+                    <td><?php echo $cliente['ID']; ?></td>
+                    <td><?php echo $cliente['NOME']; ?></td>
+                    <td><?php echo $cliente['ENDERECO']; ?></td>
+                    <td><?php echo $cliente['TELEFONE']; ?></td>
+                </tr>
+            </tbody>
+            <?php 
+                }
+            ?>
+        </table>
+    </div>
     
 </body>
 </html>
