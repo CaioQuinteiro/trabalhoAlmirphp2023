@@ -9,7 +9,15 @@
            
             return $dal->Select();
         }
-    }
 
+        public function Insert(\MODEL\Cliente $cliente){
+
+            $dal = new \DAL\dalCliente();
+
+            $dal->Insert($cliente);
+    
+        }
+    
+    }
 
 ?>

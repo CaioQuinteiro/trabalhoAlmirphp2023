@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@200;300&family=Poppins:wght@500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="..\..\VIEW\1CSS\inserir.css">
     <title>Inserir Cliente</title>
 </head>
 <body>
@@ -15,8 +16,21 @@
         </header>
 
         <main>
-            <form action="recinscliente.php" method="POST">
+            <form action="recinsCliente.php" method="POST">
+                <label for="nome">Nome:</label>
+                <input type="text" id="nome" name="nome" required>
+                <br>
+                
+                <label for="endereco">Endereço:</label>
+                <input type="text" id="endereco" name="endereco" required>
+                <br>
+                
+                <label for="telefone">Telefone:</label>
+                <input type="tel" id="telefone" name="telefone" required>
+                <br>
 
+                <button type="submit">Salvar</button>
+                <button type="reset">Limpar</button>
             </form>
         </main>
 

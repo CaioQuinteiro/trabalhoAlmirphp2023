@@ -1,6 +1,6 @@
 <?php
      
-    include '..\..\DAL\conexao.php';
+     include_once '..\..\DAL\conexao.php';
     use DAL\Conexao;
     $sql = "select * from produto;";
     $con = Conexao::conectar(); 

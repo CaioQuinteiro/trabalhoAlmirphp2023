@@ -1,0 +1,80 @@
+/* Estilos gerais */
+body {
+    font-family: 'Montserrat', sans-serif;
+    background-color: #f0f0f0;
+    margin: 0;
+    padding: 0;
+}
+  
+.container {
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 20px;
+}
+  
+header {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+a {
+    position: relative;
+    text-align: end;
+}
+
+a:hover {
+    cursor: pointer;
+}
+
+form {
+    background-color: #ffffff;
+    padding: 20px;
+    border-radius: 5px;
+}
+  
+label {
+    display: block;
+    margin-bottom: 10px;
+}
+  
+input[type="text"],
+input[type="tel"] {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+  
+button {
+    background-color: #22177dcf;
+    color: #ffffff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+  
+button:hover {
+    background-color: #4039817d;
+    transition: 0.2s;
+}
+
+@media screen and (max-width: 480px) {
+form {
+  padding: 10px;
+}
+    
+input[type="text"],
+input[type="tel"] {
+  margin-bottom: 10px;
+}
+}
+
+h1::selection, label::selection{
+    background-color: #4039817d;
+    color: black;
+  }
+
+  
+  

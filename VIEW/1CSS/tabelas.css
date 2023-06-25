@@ -3,7 +3,7 @@ html {
 }
 
 * {
-    background-color: #aeaeae;
+    background-color: #f0f0f0;
 }
 
 h1 {
@@ -29,18 +29,13 @@ th {
 }
 
 tr:nth-child(even) {
-  background-color: #f9f9f9;
+  background-color: #ffffff;
 }
 
 tr:hover td  {
   transition: 0.4s;
   background-color: #4039817d;
   cursor: pointer;
-}
-
-td::selection, h1::selection{
-  background-color: #4039817d;
-  color: black;
 }
 
 th::selection{
