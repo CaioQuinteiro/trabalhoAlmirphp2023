@@ -32,10 +32,9 @@ tr:nth-child(even) {
   background-color: #ffffff;
 }
 
-tr:hover td  {
+tr:hover td {
   transition: 0.4s;
   background-color: #4039817d;
-  cursor: pointer;
 }
 
 th::selection{

@@ -34,6 +34,7 @@ use BLL\bllCliente;
             <th>NOME</th>
             <th>ENDERECO</th>
             <th>TELEFONE</th>
+            <th> </th>
         </tr>
         <?php 
             foreach ($lstCliente as $cliente){
@@ -43,6 +44,11 @@ use BLL\bllCliente;
                 <td><?php echo $cliente->getNome(); ?></td>
                 <td><?php echo $cliente->getEndereco(); ?></td>
                 <td><?php echo $cliente->getTelefone(); ?></td>
+                <td> 
+                    <a class="btn-floating btn-large waves-effect waves-light red" onclick="JavaScript:location.href='editarCliente.php?id=' + <?php echo $cliente->getId(); ?>">
+                        <i class="material-icons">edit</i>
+                    </a>
+                </td>
             </tr>
         <?php 
             }

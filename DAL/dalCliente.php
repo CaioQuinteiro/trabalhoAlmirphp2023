@@ -27,6 +27,21 @@
         }
 
         public function SelectID(int $id){
+
+            $sql = "select * from cliente where id=?;";
+            $pdo = Conexao::conectar();
+            $query = $pdo->prepare($sql);
+            $query->execute (array($id));
+            $linha = $query->fetch(\PDO::FETCH_ASSOC);
+            Conexao::desconectar();
+
+            $cliente = new \MODEL\Cliente();
+            $cliente->setId($linha['ID']); 
+            $cliente->setNome($linha['NOME']);
+            $cliente->setEndereco($linha['ENDERECO']); 
+            $cliente->setTelefone($linha['TELEFONE']);
+
+            return $cliente;
             
         }
 
@@ -41,8 +56,16 @@
             return $result;
         }
 
-        public function Update(){
+        public function Update(\MODEL\Cliente $cliente){
+            $sql = "UPDATE cliente SET nome=?, endereco=?, telefone=? WHERE id=?";
 
+            $pdo = Conexao::conectar();
+            $pdo->setAttribute(\PDO::ATTR_ERRMODE, \PDO::ERRMODE_EXCEPTION);
+            $query = $pdo->prepare($sql);
+            $result = $query->execute(array($cliente->getNome(), $cliente->getEndereco(), 
+                                            $cliente->getTelefone(), $cliente->getId()));
+            $con = Conexao::desconectar();
+            return $result;
         }
 
         public function Delete(){

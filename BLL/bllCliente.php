@@ -10,6 +10,12 @@
             return $dal->Select();
         }
 
+        public function SelectID (int $id){
+            $dal = new \DAL\dalCliente();
+
+            return $dal->SelectID($id);
+        }
+
         public function Insert(\MODEL\Cliente $cliente){
 
             $dal = new \DAL\dalCliente();
@@ -17,7 +23,14 @@
             $dal->Insert($cliente);
     
         }
-    
+        
+        public function Update(\MODEL\Cliente $cliente){
+
+            $dal = new \DAL\dalCliente();
+
+            $dal->Update($cliente);
+    }
+
     }
 
 ?>
