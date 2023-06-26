@@ -1,14 +1,13 @@
-html {
-    font-family: 'Montserrat', sans-serif;
-}
-
-* {
-    background-color: #f0f0f0;
-}
+body {
+  font-family: 'Montserrat', sans-serif;
+  background-color: #f0f0f0;
+  margin: 0;
+  padding: 0;
+} 
 
 h1 {
   text-align: center;
-  color: black;
+  color: 333;
   font-size: 40px;
   margin: 20px auto; 
   border-radius: 4px;
@@ -32,7 +31,7 @@ tr:nth-child(even) {
   background-color: #ffffff;
 }
 
-tr:hover td {
+tr:hover td.td {
   transition: 0.4s;
   background-color: #4039817d;
 }
@@ -51,13 +50,28 @@ i {
   cursor: pointer;
 }
 
+#ADD {
+  position: relative;
+}
+
 #ADD::after {
   font-size: 12px;
   font-family: 'Montserrat', sans-serif;
   content: "ADICIONAR CLIENTE";
   display: none;
+  position: absolute;
+  top: 0;
+  left: 100%;
+  white-space: nowrap;
+  background-color: #f1f1f1;
+  padding: 5px;
+  z-index: 1;
 }
 
 #ADD:hover::after {
-  display: block;
+  display: flex;
+}
+
+.botoes_edit_elim {
+  background-color: #22177dcf;
 }

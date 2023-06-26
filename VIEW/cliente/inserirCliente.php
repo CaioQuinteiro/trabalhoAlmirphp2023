@@ -31,6 +31,7 @@
 
                 <button type="submit">Salvar</button>
                 <button type="reset">Limpar</button>
+                <button type="button" onclick="JavaScript:location.href='lstCliente.php'">Voltar</button>
             </form>
         </main>
 

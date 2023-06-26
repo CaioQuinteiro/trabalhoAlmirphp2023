@@ -29,7 +29,14 @@
             $dal = new \DAL\dalCliente();
 
             $dal->Update($cliente);
-    }
+        }
+
+        public function Delete(int $id){
+
+            $dal = new \DAL\dalCliente();
+
+            $dal->Delete($id);            
+        }
 
     }
 

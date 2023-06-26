@@ -40,13 +40,13 @@ use BLL\bllCliente;
             foreach ($lstCliente as $cliente){
         ?>
             <tr>
-                <td><?php echo $cliente->getId(); ?></td>
-                <td><?php echo $cliente->getNome(); ?></td>
-                <td><?php echo $cliente->getEndereco(); ?></td>
-                <td><?php echo $cliente->getTelefone(); ?></td>
-                <td> 
-                    <a class="btn-floating btn-large waves-effect waves-light red" onclick="JavaScript:location.href='editarCliente.php?id=' + <?php echo $cliente->getId(); ?>">
-                        <i class="material-icons">edit</i>
+                <td class="td"><?php echo $cliente->getId(); ?></td>
+                <td class="td"><?php echo $cliente->getNome(); ?></td>
+                <td class="td"><?php echo $cliente->getEndereco(); ?></td>
+                <td class="td"><?php echo $cliente->getTelefone(); ?></td>
+                <td > 
+                    <a onclick="JavaScript:location.href='detCliente.php?id=' + <?php echo $cliente->getId(); ?>">
+                        <i class="material-icons">dehaze</i>  
                     </a>
                 </td>
             </tr>

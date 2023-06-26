@@ -1,4 +1,4 @@
-/* Estilos gerais */
+
 body {
     font-family: 'Montserrat', sans-serif;
     background-color: #f0f0f0;
@@ -15,15 +15,6 @@ body {
 header {
     text-align: center;
     margin-bottom: 20px;
-}
-
-a {
-    position: relative;
-    text-align: end;
-}
-
-a:hover {
-    cursor: pointer;
 }
 
 form {
@@ -74,7 +65,7 @@ input[type="tel"] {
 h1::selection, label::selection{
     background-color: #4039817d;
     color: black;
-  }
+}
 
   
   
