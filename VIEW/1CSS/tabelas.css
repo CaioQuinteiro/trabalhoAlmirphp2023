@@ -42,3 +42,23 @@ th::selection{
   background-color: #b8b8b8;
   color: black;
 }
+
+h1::selection, td::selection, i::selection{
+  background-color: #4039817d;
+  color: black;
+}
+
+i {
+  cursor: pointer;
+}
+
+#ADD::after {
+  font-size: 12px;
+  font-family: 'Montserrat', sans-serif;
+  content: "ADICIONAR CLIENTE";
+  display: none;
+}
+
+#ADD:hover::after {
+  display: block;
+}

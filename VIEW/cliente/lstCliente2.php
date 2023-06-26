@@ -25,7 +25,7 @@ use BLL\bllCliente;
     <h1>Listar Clientes</h1>
     
     <a class="btn-floating btn-large waves-effect waves-light red" onclick="JavaScript:location.href='inserirCliente.php'">
-        <i class="material-icons">add</i>
+        <i class="material-icons" id="ADD">add</i>
     </a>
 
     <table>
