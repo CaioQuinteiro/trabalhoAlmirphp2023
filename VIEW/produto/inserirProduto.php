@@ -6,6 +6,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@200;300&family=Poppins:wght@500;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="..\..\VIEW\1CSS\inserir.css">
+    <link rel="stylesheet" href="..\..\VIEW\1CSS\footer.css">
     <title>Inserir Produto</title>
 </head>
 <body>
@@ -31,7 +32,7 @@
 
                 <button type="submit">Salvar</button>
                 <button type="reset">Limpar</button>
-                <button type="button" onclick="JavaScript:location.href='lstProduto.php'">Voltar</button>
+                <button type="button" onclick="JavaScript:location.href='lstProdutos.php'">Voltar</button>
             </form>
         </main>
 
@@ -39,7 +40,11 @@
 
         </footer>
     </div>   
-
+    <footer>
+        <span>
+            © Caio Quinteiro e Nilton Duarte, 2023 - Todos os direitos reservados
+        </span>
+    </footer>
     
     
 </body>

@@ -17,6 +17,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@200;300&family=Poppins:wght@500;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="..\..\VIEW\1CSS\inserir.css">
+    <link rel="stylesheet" href="..\..\VIEW\1CSS\footer.css">
     <title>Editar Produto</title>
 </head>
 <body>
@@ -54,7 +55,11 @@
         </main>
 
     </div>   
-
+    <footer>
+        <span>
+            © Caio Quinteiro e Nilton Duarte, 2023 - Todos os direitos reservados
+        </span>
+    </footer>
     
     
 </body>
