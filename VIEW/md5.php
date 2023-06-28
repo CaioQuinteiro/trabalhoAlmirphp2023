@@ -1,6 +1,6 @@
 <?php 
 
-    $senha = 'senha123';
+    $senha = 'abc';
     echo $senha . " - ". md5($senha); 
 
 ?>
