@@ -40,6 +40,7 @@
                     <li class="navigation__item"><a href="sobreProjeto.html" class="navigation__link">Sobre o Projeto</a></li>
                     <li class="navigation__item"><a href="cliente/lstCliente.php" class="navigation__link">Clientes</a></li>
                     <li class="navigation__item"><a href="produto/lstProdutos.php" class="navigation__link">Produtos</a></li>
+                    <li class="navigation__item"><a href="pedido/lstPedido.php" class="navigation__link">Pedidos</a></li>
                     <li class="navigation__item"><a href="logout.php" class="navigation__link">Sair</a></li>   
                 </ul>
             </nav>

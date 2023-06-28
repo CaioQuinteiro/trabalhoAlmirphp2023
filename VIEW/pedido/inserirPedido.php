@@ -7,32 +7,32 @@
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@200;300&family=Poppins:wght@500;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="..\..\VIEW\css\inserir.css">
     <link rel="stylesheet" href="..\..\VIEW\css\footer.css">
-    <title>Inserir Cliente</title>
+    <title>Inserir Pedido</title>
 </head>
 <body>
 
     <div>
         <header>
-            <h1>Inserir Cliente</h1>
+            <h1>Inserir Pedido</h1>
         </header>
 
         <main>
-            <form action="recinsCliente.php" method="POST">
-                <label for="nome">Nome:</label>
-                <input type="text" id="nome" name="nome" required pattern="[A-Za-zÀ-ú\s]+$" required minlength="2" maxlength="50">
+            <form action="recinsPedido.php" method="POST">
+                <label for="cli" data-error="Preencha o campo">Id Cliente:</label>
+                <input type="text" id="cli" name="cli" required pattern="[0-9]+$">
                 <br>
                 
-                <label for="endereco">Endereço:</label>
-                <input type="text" id="endereco" name="endereco" required>
+                <label for="idprod">Id Produto:</label>
+                <input type="text" id="idprod" name="idprod" required pattern="[0-9]+$">
                 <br>
                 
-                <label for="telefone">Telefone:</label>
-                <input type="tel" id="telefone" name="telefone" required pattern="[0-9]+$" required min="1" max="15">
+                <label for="data">Data:</label>
+                <input type="tel" id="data" name="data" required >
                 <br>
 
                 <button type="submit">Salvar</button>
                 <button type="reset">Limpar</button>
-                <button type="button" onclick="JavaScript:location.href='lstCliente.php'">Voltar</button>
+                <button type="button" onclick="JavaScript:location.href='lstPedido.php'">Voltar</button>
             </form>
         </main>
 
