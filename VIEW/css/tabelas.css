@@ -79,7 +79,7 @@ i {
 button {
   background-color: #22177dcf;
   color: #ffffff;
-  padding: 3px 10px;
+  padding: 3px 6px;
   border: none;
   border-radius: 3px;
   cursor: pointer;
@@ -89,3 +89,4 @@ button:hover {
   background-color: #4039817d;
   transition: 0.2s;
 }
+

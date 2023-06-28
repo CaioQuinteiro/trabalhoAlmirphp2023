@@ -1,6 +1,6 @@
 <?php
 
-    include_once '../../MODEL/produto.php';
+    include_once '../../MODEL/Produto.php';
     include_once '../../BLL/bllProduto.php';
 
     $produto = new \MODEL\Produto();

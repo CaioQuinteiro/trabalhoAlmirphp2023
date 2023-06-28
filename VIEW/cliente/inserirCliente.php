@@ -5,8 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@200;300&family=Poppins:wght@500;600;700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="..\..\VIEW\1CSS\inserir.css">
-    <link rel="stylesheet" href="..\..\VIEW\1CSS\footer.css">
+    <link rel="stylesheet" href="..\..\VIEW\css\inserir.css">
+    <link rel="stylesheet" href="..\..\VIEW\css\footer.css">
     <title>Inserir Cliente</title>
 </head>
 <body>
@@ -18,8 +18,8 @@
 
         <main>
             <form action="recinsCliente.php" method="POST">
-                <label for="nome">Nome:</label>
-                <input type="text" id="nome" name="nome" required>
+                <label for="nome" data-error="Preencha o campo Nome">Nome:</label>
+                <input type="text" id="nome" name="nome" required pattern="[A-Za-zÀ-ú\s]+$" required minlength="2" maxlength="50">
                 <br>
                 
                 <label for="endereco">Endereço:</label>
@@ -27,7 +27,7 @@
                 <br>
                 
                 <label for="telefone">Telefone:</label>
-                <input type="tel" id="telefone" name="telefone" required>
+                <input type="tel" id="telefone" name="telefone" required pattern="[0-9]+$" required min="1" max="15">
                 <br>
 
                 <button type="submit">Salvar</button>

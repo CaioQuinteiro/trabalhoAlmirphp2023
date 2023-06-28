@@ -1,7 +1,7 @@
 <?php
 
-    include_once '../../MODEL/produto.php';
-    include_once '../../BLL/bllProduto.php';
+    include_once 'C:\xampp\htdocs\trabalhoAlmirphp2023\MODEL\Produto.php';
+    include_once 'C:\xampp\htdocs\trabalhoAlmirphp2023\BLL\bllProduto.php';
 
     $id = $_GET['id'];
 

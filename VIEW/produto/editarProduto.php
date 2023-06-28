@@ -16,8 +16,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@200;300&family=Poppins:wght@500;600;700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="..\..\VIEW\1CSS\inserir.css">
-    <link rel="stylesheet" href="..\..\VIEW\1CSS\footer.css">
+    <link rel="stylesheet" href="..\..\VIEW\css\inserir.css">
+    <link rel="stylesheet" href="..\..\VIEW\css\footer.css">
     <title>Editar Produto</title>
 </head>
 <body>
@@ -42,11 +42,11 @@
                 <br>
                 
                 <label for="endereco">Preço:</label>
-                <input type="text" id="preco" name="preco" value="<?php echo $produto->getPreco(); ?>" required>
+                <input type="text" id="preco" name="preco" value="<?php echo $produto->getPreco(); ?>" required pattern="[0-9]+$">
                 <br>
                 
                 <label for="telefone">Quantidade:</label>
-                <input type="text" id="qtde" name="qtde" value="<?php echo $produto->getQtde(); ?>" required>
+                <input type="text" id="qtde" name="qtde" value="<?php echo $produto->getQtde(); ?>" required pattern="[0-9]+$" >
                 <br>
 
                 <button type="submit">Salvar</button>

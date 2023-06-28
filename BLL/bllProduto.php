@@ -1,7 +1,7 @@
 <?php
     namespace BLL; 
     use DAL\dalProduto;
-    include_once '../../DAL/dalProduto.php';
+    include_once 'c:\xampp\htdocs\trabalhoAlmirphp2023\DAL\dalProduto.php';
     
     class bllProduto {
         public function Select (){
