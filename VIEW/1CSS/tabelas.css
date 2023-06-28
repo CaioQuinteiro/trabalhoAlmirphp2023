@@ -57,7 +57,7 @@ i {
 #ADD::after {
   font-size: 12px;
   font-family: 'Montserrat', sans-serif;
-  content: "ADICIONAR CLIENTE";
+  content: "ADICIONAR ELEMENTO";
   display: none;
   position: absolute;
   top: 0;
@@ -74,4 +74,18 @@ i {
 
 .botoes_edit_elim {
   background-color: #22177dcf;
+}
+
+button {
+  background-color: #22177dcf;
+  color: #ffffff;
+  padding: 3px 10px;
+  border: none;
+  border-radius: 3px;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #4039817d;
+  transition: 0.2s;
 }

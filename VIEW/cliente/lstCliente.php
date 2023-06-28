@@ -22,9 +22,13 @@ use BLL\bllCliente;
     <title>Listar Clientes</title>
 </head>
 <body>
-    <h1>Listar Clientes</h1>
+    <a onclick="JavaScript:location.href='../../VIEW/menu/menu.php'">
+        <i class="material-icons">arrow_back</i>
+    </a>    
     
-    <a class="btn-floating btn-large waves-effect waves-light red" onclick="JavaScript:location.href='inserirCliente.php'">
+    <h1>Listar Clientes</h1>        
+    
+    <a onclick="JavaScript:location.href='inserirCliente.php'">
         <i class="material-icons" id="ADD">add</i>
     </a>
 

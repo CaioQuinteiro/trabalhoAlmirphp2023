@@ -28,6 +28,7 @@ label {
     margin-bottom: 10px;
 }
   
+input[type="number"],
 input[type="text"],
 input[type="tel"] {
     width: 100%;
@@ -56,6 +57,7 @@ form {
   padding: 10px;
 }
     
+input[type="number"],
 input[type="text"],
 input[type="tel"] {
   margin-bottom: 10px;
