@@ -47,7 +47,7 @@
 
         public function Insert(\MODEL\Pedido $pedido){
             $con = Conexao::conectar();
-            $sql = "INSERT INTO pedidos (id_cliente, id_produto, data_cadastro)
+            $sql = "INSERT INTO pedidos (id_cliente, id_produto, data_pedido)
                     VALUES ('{$pedido->getIdCliente()}', '{$pedido->getIdProduto()}',
                             '{$pedido->getData()}');";
 
