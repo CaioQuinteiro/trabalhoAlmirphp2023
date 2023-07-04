@@ -35,17 +35,7 @@
                 <button type="button" onclick="JavaScript:location.href='lstCliente.php'">Voltar</button>
             </form>
         </main>
-
-        <footer>
-
-        </footer>
     </div>   
 
-    
-    <footer>
-        <span>
-            © Caio Quinteiro e Nilton Duarte, 2023 - Todos os direitos reservados
-        </span>
-    </footer>
 </body>
 </html>
